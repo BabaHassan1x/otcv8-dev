@@ -144,7 +144,7 @@ jobs:
         mv '${{ runner.workspace }}/build/otclient' '${{ runner.workspace }}/build/otclient_mac'
 
     - name: Upload otclient
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Download-binaries
         path: |
