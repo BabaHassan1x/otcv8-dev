@@ -23,7 +23,6 @@ jobs:
         run: |
           git clone https://github.com/microsoft/vcpkg.git "$env:RUNNER_TEMP\vcpkg"
           Set-Location "$env:RUNNER_TEMP\vcpkg"
-          git checkout 3b3bd424827a1f7f4813216f6b32b6c61e386b2e
           .\bootstrap-vcpkg.bat -disableMetrics
           .\vcpkg.exe integrate install
 
